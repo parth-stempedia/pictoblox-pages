@@ -1,0 +1,161 @@
+.body{
+    margin:0px;
+    height: 100%;
+}
+.menu-bar {
+    display: flex;
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 10;
+    /* border: 2px solid black; */
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+
+    /*
+        For most things, we shouldn't explicitly set height, and let the
+        content push the element to whatever fits. Using a fixed height
+        instead, will help us subtract the value we assign from the body,
+        adding up to a perfect 100%. This means we don't need to set
+        overflow: hidden, which makes it hard to debug. border-box
+        simplifies by all of this by removing padding from the equation.
+    */
+    box-sizing: border-box;
+    height: 3rem;
+
+    /*
+        @todo: This adds ~20px in Chrome, when scrolling to the right,
+        but fixes [FFx + Safari] [resize window down + scroll to the right] bug.
+        width: 100%;
+    */
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 0.75rem;
+    font-weight: bold;
+    background-color: hsla(279, 61%, 31%, 1);
+    color: hsla(0, 100%, 100%, 1);
+}
+.heading{
+    width: 90%;
+    margin-left: 3rem;
+    margin-top: 1.5rem;
+    text-align: left;
+    color: #673187;
+    font-size: 30px;
+    font-weight: 700;
+    /* padding-top: 2rem; */
+}
+.content{
+    text-align: left;
+    margin-left: 3rem;
+    width: 90%;
+    font-size: 16px;
+    /* border: 2px solid black; */
+    
+}
+.main-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-grow: 1;
+}
+.picto-main-image{
+    width: 100%;
+    height: 100%;
+}
+.file-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.file-group .menu-bar-item {
+    padding: 0 0.75rem;
+}
+.scratch-logo {
+    height:  1.6rem;
+    vertical-align: middle;
+}
+
+.scratch-logo.clickable {
+    cursor: pointer;
+}
+.topic-header{
+    top:0%;
+    width: 100%;
+    position: relative;
+    /* border: 2px solid black; */
+}
+.header-image{
+    position: relative;
+    width: 100%;
+    height: 15%;
+}
+.header{
+    color: "white";
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: "Open Sans";
+    font-size: 40px;
+    /* margin-top: 0%; */
+    top: 45%;
+    font-weight: bold;
+    font: 44px;
+    /* border: 2px solid black; */
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    position: relative;
+    height: 7rem;
+    width: 100%;
+    background-color: #1C75BC;
+    margin-top: 2%;
+}
+.main-body{
+    position: relative;
+    margin-top: 4%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+.footer-text{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+    margin-top: 1rem;
+}
+.footer-links{
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    margin-top: 1rem;
+}
+#google-play-button{
+    margin-top: 0.1rem;
+    padding-bottom: 0.2rem;
+}
+.extension-img{
+    width: 90%;
+    height: 80%;
+}
+.img-div{
+    width: 20%;
+    height: 80%;
+    margin: 0px;
+    /* border: 2px solid black; */
+}
+table, th,td{
+    border:0.5px solid black;
+    border-collapse: collapse;
+  }
