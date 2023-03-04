@@ -4,7 +4,11 @@
 }
 .menu-bar {
     display: flex;
-    position: static;
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 10;
+    /* border: 2px solid black; */
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: nowrap;
@@ -32,19 +36,21 @@
     color: hsla(0, 100%, 100%, 1);
 }
 .heading{
-    width: 100%;
+    width: 90%;
+    margin-left: 3rem;
     margin-top: 1.5rem;
-    text-align: center;
+    text-align: left;
     color: #673187;
     font-size: 30px;
     font-weight: 700;
     /* padding-top: 2rem; */
 }
 .content{
-    text-align: center;
-    margin-top: 1rem;
-    width: 60%;
+    text-align: left;
+    margin-left: 3rem;
+    width: 90%;
     font-size: 16px;
+    /* border: 2px solid black; */
     
 }
 .main-menu {
@@ -57,7 +63,7 @@
 }
 .picto-main-image{
     width: 100%;
-    height: 14rem;
+    height: 100%;
 }
 .file-group {
     display: flex;
@@ -77,14 +83,15 @@
     cursor: pointer;
 }
 .topic-header{
+    top:0%;
     width: 100%;
     position: relative;
     /* border: 2px solid black; */
 }
 .header-image{
-    position: absolute;
+    position: relative;
     width: 100%;
-    height: 12rem;
+    height: 15%;
 }
 .header{
     color: "white";
@@ -95,9 +102,11 @@
     color: white;
     font-family: "Open Sans";
     font-size: 40px;
-    margin-top: 5%;
+    /* margin-top: 0%; */
+    top: 45%;
     font-weight: bold;
     font: 44px;
+    /* border: 2px solid black; */
 }
 .footer{
     display: flex;
@@ -111,7 +120,7 @@
 }
 .main-body{
     position: relative;
-    margin-top: 15%;
+    margin-top: 4%;
     width: 100%;
     display: flex;
     flex-direction: column;
