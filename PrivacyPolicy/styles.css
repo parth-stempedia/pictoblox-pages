@@ -1,6 +1,7 @@
 .body{
     margin:0px;
     height: 100%;
+    font-family: "open-sans", sans-serif;
 }
 .menu-bar {
     display: flex;

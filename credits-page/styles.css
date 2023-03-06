@@ -1,6 +1,7 @@
 .body{
     margin:0px;
     height: 100%;
+    font-family: "open-sans", sans-serif;
 }
 .menu-bar {
     display: flex;
@@ -39,17 +40,18 @@
     width: 90%;
     margin-left: 3rem;
     margin-top: 1.5rem;
-    text-align: left;
+    text-align: center;
     color: #673187;
     font-size: 30px;
     font-weight: 700;
     /* padding-top: 2rem; */
 }
 .content{
-    text-align: left;
+    text-align: center;
     margin-left: 3rem;
-    width: 90%;
+    width: 60%;
     font-size: 16px;
+    margin-top: 2%;
     /* border: 2px solid black; */
     
 }
