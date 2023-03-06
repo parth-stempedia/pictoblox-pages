@@ -1,6 +1,7 @@
+
 .body{
     margin:0px;
-    min-height: 100%;
+    height: 100%;
 }
 .menu-bar {
     display: flex;
@@ -50,7 +51,6 @@
     margin-left: 3rem;
     width: 90%;
     font-size: 16px;
-    margin-top: 0%;
     /* border: 2px solid black; */
     
 }
@@ -117,16 +117,16 @@
     height: 7rem;
     width: 100%;
     background-color: #1C75BC;
-    margin-top: 2%;
+    /* margin-top: 2%; */
 }
 .main-body{
     position: relative;
-    margin-top: 4%;
+    /* margin-top: 4%; */
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100%;
+    /* height: 100%; */
     min-height: calc(100vh - 40px);
 }
 .footer-text{
@@ -160,4 +160,39 @@
 table, th,td{
     border:0.5px solid black;
     border-collapse: collapse;
+  }
+  .fa {
+    padding: 8%;
+    font-size: 10%;
+    /* width: 100%; */
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  .fa-github {
+    background: black;
+    color: white;
+  }
+  .fa-youtube {
+    background: red;
+    color: white;
   }
