@@ -116,9 +116,9 @@
     flex-direction: column;
     bottom: 0;
     position: relative;
-    height: 7rem;
+    height: 9rem;
     width: 100%;
-    background-color: #1C75BC;
+    background-color: hsla(279, 61%, 31%, 1);
     margin-top: 2%;
 }
 .main-body{
@@ -128,7 +128,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* height: 100%; */
+    height: 100%;
     min-height: calc(100vh - 40px);
 }
 .footer-text{
@@ -137,6 +137,7 @@
     font-weight: bolder;
     color: white;
     margin-top: 1rem;
+    padding-bottom: 1%;
 }
 .footer-links{
     width: 100%;
